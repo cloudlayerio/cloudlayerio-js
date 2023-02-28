@@ -1,0 +1,42 @@
+{
+  "name": "cloudlayerio",
+  "version": "1.0.0",
+  "description": "A Node.js SDK for generating PDFs and images from HTML, URLs, and templates using the Cloudlayer.io API.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "console": "ts-node --require dotenv/config console/index.ts",
+    "build": "tsc",
+    "publish": "npm run build && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cloudlayerio/cloudlayerio-js.git"
+  },
+  "keywords": [
+    "cloudlayer",
+    "pdf",
+    "image",
+    "html",
+    "url",
+    "template",
+    "api",
+    "sdk",
+    "generation"
+  ],
+  "author": "cloudlayer.io",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cloudlayerio/cloudlayerio-js/issues"
+  },
+  "homepage": "https://github.com/cloudlayerio/cloudlayerio-js#readme",
+  "dependencies": {
+    "@types/node-fetch": "^2.6.2",
+    "node-fetch": "^2.6.9"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.1",
+    "dotenv": "^16.0.3",
+    "ts-node": "^10.9.1"
+  }
+}
