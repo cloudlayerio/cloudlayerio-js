@@ -23,7 +23,7 @@
 		"sdk"
 	],
 	"engines": {
-		"node": ">=18.13.0"
+		"node": ">=20.0.0"
 	},
 	"type": "module",
 	"main": "./dist/index.cjs",
