@@ -1,4 +1,3 @@
-import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 import { CloudLayer } from "../../src/client.js";
 
@@ -6,7 +5,7 @@ const apiKey = process.env.CLOUDLAYER_API_KEY?.trim();
 
 describe.skipIf(!apiKey)("Smoke Tests (Live API)", () => {
 	const client = new CloudLayer({
-		apiKey: apiKey!,
+		apiKey: apiKey as string,
 		apiVersion: "v2",
 	});
 
@@ -21,7 +20,14 @@ describe.skipIf(!apiKey)("Smoke Tests (Live API)", () => {
 		expect(account).toHaveProperty("email");
 		expect(account).toHaveProperty("uid");
 		expect(account).toHaveProperty("subType");
-		console.log("Account:", account.email, "| Plan:", account.subType, "| Active:", account.subActive);
+		console.log(
+			"Account:",
+			account.email,
+			"| Plan:",
+			account.subType,
+			"| Active:",
+			account.subActive,
+		);
 	});
 
 	it("listJobs — returns array", async () => {

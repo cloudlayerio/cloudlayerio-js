@@ -34,7 +34,9 @@ await test("getStatus — API is reachable", async () => {
 await test("getAccount — auth works", async () => {
 	const account = await client.getAccount();
 	if (!account.email) throw new Error("No email field");
-	console.log(`    Account: ${account.email} | Plan: ${account.subType} | Active: ${account.subActive}`);
+	console.log(
+		`    Account: ${account.email} | Plan: ${account.subType} | Active: ${account.subActive}`,
+	);
 });
 
 await test("listJobs — returns array", async () => {
