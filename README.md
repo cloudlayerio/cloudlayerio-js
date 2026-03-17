@@ -1,6 +1,6 @@
 # @cloudlayerio/sdk
 
-Official TypeScript/JavaScript SDK for the [CloudLayer.io](https://cloudlayer.io) document generation API.
+Official TypeScript/JavaScript SDK for the [cloudlayer.io](https://cloudlayer.io) document generation API.
 
 **Convert URLs, HTML, and templates to PDF and images** with a simple, type-safe API.
 
@@ -265,6 +265,11 @@ import type {
   CloudLayerResponseHeaders,
 } from "@cloudlayerio/sdk";
 ```
+
+## Other SDKs
+
+- **.NET C#:** [cloudlayerio-dotnet](https://www.nuget.org/packages/cloudlayerio-dotnet/) ([GitHub](https://github.com/cloudlayerio/cloudlayerio-dotnet))
+- **Python:** [cloudlayerio](https://pypi.org/project/cloudlayerio/) ([GitHub](https://github.com/cloudlayerio/cloudlayerio-python))
 
 ## License
 
